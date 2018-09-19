@@ -1,0 +1,1 @@
+An Etsy clone built with React and Redux.

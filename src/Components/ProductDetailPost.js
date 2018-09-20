@@ -1,12 +1,11 @@
 import React from 'react';
 import SmartAddButton from './AddToCartButton'
-import { NavLink } from 'react-router-dom';
 
-let ProductPost = (props) =>
+let ProductDetailPost = (props) =>
   <li className='product-post'>
-    <NavLink to={`/product/${props.product.id}`}><h1 className='product-title'>{props.product.title}</h1></NavLink>
+    <h1 className='product-title'>{props.product.title}</h1>
     <img 
-    alt={props.product.title} 
+    alt={props.title} 
     className='post-image' 
     src={props.product.imageURL}>
     </img>
@@ -15,4 +14,4 @@ let ProductPost = (props) =>
     <SmartAddButton product={props.product} />
   </li>
 
-export default ProductPost;
+export default ProductDetailPost;

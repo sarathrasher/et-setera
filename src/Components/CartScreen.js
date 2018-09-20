@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import SmartNavbar from './Navbar'
-import ProductList from './ProductList'
+import CartProductList from './CartProductList'
+import cartTotal from '../Actions/cartTotal'
 
 let CartScreen = (props) => {
   console.log(props.cartItems);
@@ -9,7 +10,8 @@ let CartScreen = (props) => {
   <div className='cart'>
   <SmartNavbar />
     <h1>Cart</h1>
-    <ProductList products={props.cartItems} />
+    <CartProductList products={props.cartItems} />
+    <p className='total'>Total: ${cartTotal(props.cartItems)}</p>
   </div>
   )
 }

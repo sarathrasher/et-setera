@@ -1,7 +1,7 @@
 let updateCart = (oldState, action) => {
-  let newCart = [
-    oldState.cartItems.concat(action.products.filter(product => product.id === oldState.products.id))
-  ]
+  let newCart = 
+    oldState.cartItems.concat([action.product])
+  console.log(newCart);
   return {
     ...oldState,
     cartItems: newCart
@@ -9,7 +9,7 @@ let updateCart = (oldState, action) => {
 }
 
 let reducers = {
-  'UPDATE_CART': updateCart
+  'ADD_TO_CART': updateCart
 }
 
 let reducer = (oldState, action) => {

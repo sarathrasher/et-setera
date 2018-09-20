@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import SmartAddButton from './AddToCartButton'
 
 let ProductPost = (props) =>
   <li className='product-post'>
@@ -10,7 +11,7 @@ let ProductPost = (props) =>
     </img>
     <p className='post-description'>{props.product.description}</p>
     <p className='product-price'>Cost: {props.product.price}</p>
+    <SmartAddButton product={props.product} />
   </li>
-
 
 export default ProductPost;

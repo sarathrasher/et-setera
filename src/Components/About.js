@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar';
+import SmartNavbar from './Navbar';
 
 let About = (props) => 
   <div className='about-page'>
-    <Navbar />
+    <SmartNavbar />
     <h1>About</h1>
   </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import SmartNavbar from './Navbar';
 import SmartSidebar from './Sidebar';
 import { connect } from 'react-redux';
 import ProductList from './ProductList';
@@ -9,7 +9,7 @@ let CategoryScreen = (props) => {
   console.log(filteredProducts)
     return (
     <div className='category-screen'>
-      <Navbar />
+      <SmartNavbar />
       <SmartSidebar />
       <h1 className='category-header'>{props.category.title}</h1>
       <ProductList products={filteredProducts} />

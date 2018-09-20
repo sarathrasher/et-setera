@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
+import SmartNavbar from './Navbar';
 import SmartSidebar from './Sidebar';
 import { connect } from 'react-redux';
 
 let ProductDetailScreen = (props) =>
   <div class='product-detail-screen'>
-    <Navbar />
+    <SmartNavbar />
     <SmartSidebar />
   </div>
 

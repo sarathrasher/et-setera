@@ -6,7 +6,7 @@ import SmartProductDetailScreen from '../Components/ProductDetailScreen'
 import About from '../Components/About'
 import SmartCart from '../Components/CartScreen'
 
-let Router = (props) =>
+let Router = () =>
   <HashRouter>
     <div>
       <Switch>

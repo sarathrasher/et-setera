@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './CSS/App.css';
+import { connect } from 'react-redux';
+import Router from './Router/router';
 
 let App = (props) => 
-  <h1 className="App">
-    Test
-  </h1>
+  <Router {...props} />
 
-export default App;
+let ConnectedApp = connect(state => state)(App)
+
+export default ConnectedApp;

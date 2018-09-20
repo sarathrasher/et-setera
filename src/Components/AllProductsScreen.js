@@ -2,14 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Navbar from './Navbar';
 import SmartSidebar from './Sidebar';
-import SmartProductList from './ProductList';
-
+import ProductList from './ProductList';
 
 let AllProductsScreen = (props) =>
   <div className='home'>
     <Navbar />
     <SmartSidebar />
-    <SmartProductList props={props} />
+    <ProductList products={props.products} />
   </div>
 
 let SmartProductsScreen = connect(state => state)(AllProductsScreen)

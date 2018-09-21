@@ -1,6 +1,6 @@
 import React from 'react'
 import { HashRouter, Route, NavLink, Switch } from 'react-router-dom';
-import SmartProductsScreen from '../Components/AllProductsScreen';
+import SmartProductsScreen from '../Components/FetchProducts';
 import SmartCategoryScreen from '../Components/CategoryScreen';
 import SmartProductDetailScreen from '../Components/ProductDetailScreen'
 import About from '../Components/About'

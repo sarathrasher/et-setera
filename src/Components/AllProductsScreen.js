@@ -1,8 +1,9 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react';
 import SmartNavbar from './Navbar';
 import SmartSidebar from './Sidebar';
 import ProductList from './ProductList';
+import { API_URL } from '../env';
+import FetchProducts from './FetchProducts';
 
 let AllProductsScreen = (props) =>
   <div className='home'>
@@ -11,6 +12,6 @@ let AllProductsScreen = (props) =>
     <ProductList products={props.products} />
   </div>
 
-let SmartProductsScreen = connect(state => state)(AllProductsScreen)
 
-export default SmartProductsScreen;
+
+export default AllProductsScreen;

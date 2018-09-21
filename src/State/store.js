@@ -4,8 +4,8 @@ import products from '../Data/products';
 import categories from '../Data/categories';
 
 let initialState = {
-  products: products,
-  categories: categories,
+  products: [],
+  categories: [],
   cartItems: [],
 };
 

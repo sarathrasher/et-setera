@@ -12,7 +12,10 @@ let ProductDetailScreen = (props) =>
   </div>
 
 
-let SmartDetailScreen = connect((state, props) => ({product: state.products.find((product) => product.id === props.match.params.id),
+let SmartDetailScreen = connect(
+  (state, props) => 
+    ({product: state.products.find((product) => 
+      product.id === props.match.params.id),
 }))(ProductDetailScreen);
 
 export default SmartDetailScreen;

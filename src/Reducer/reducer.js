@@ -8,8 +8,17 @@ let updateCart = (oldState, action) => {
   }
 }
 
+let loadProducts = (oldState, action) =>
+  ({
+    ...oldState,
+    products: action.products
+  })
+
+
+
 let reducers = {
-  'ADD_TO_CART': updateCart
+  'ADD_TO_CART': updateCart,
+  'LOAD_PRODUCTS': loadProducts,
 }
 
 let reducer = (oldState, action) => {
